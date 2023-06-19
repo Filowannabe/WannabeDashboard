@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
+import Calendar from "./scenes/calendar";
 import Contacts from "./scenes/contacts";
 import Dashboard from "./scenes/dashboard";
 import SideBar from "./scenes/global/SideBar";
@@ -26,6 +27,7 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<ProfileForm />} />
+              <Route path="/calendar" element={<Calendar />} />
             </Routes>
           </main>
         </div>
